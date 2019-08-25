@@ -1,0 +1,23 @@
+{
+  "name": "Word_Guess_Cli",
+  "version": "1.0.0",
+  "description": "Word Guess command-linde game using constructor functions",
+  "main": "letter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolbpr/Word_Guess_Cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolbpr/Word_Guess_Cli/issues"
+  },
+  "homepage": "https://github.com/carolbpr/Word_Guess_Cli#readme",
+  "dependencies": {
+    "inquirer": "^7.0.0"
+  }
+}
