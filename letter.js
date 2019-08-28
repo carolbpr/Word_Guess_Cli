@@ -1,25 +1,18 @@
 function Letter(character) {
     this.character = character;
-    this.guessed = false;
+    this.blank = false;
     if (this.character === " ") {
-        this.guessed = true;
+        this.blank = true;
     };
 };
 Letter.prototype.underscore = function() {
 
-    if (this.guessed) {
-        console.log(this.character)
+    if (this.blank) {
+        
         return this.character;
     } else {
-        console.log("_");
+        
         return "_";
-    }
-};
-Letter.prototype.letterInWord = (letter) => {
-    if (this.character.toUpperCase() === letter.toUpperCase()){
-        return true;
-    }else {
-        return false;
     }
 };
 
