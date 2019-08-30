@@ -54,7 +54,7 @@ function enterAletter() {
                 console.log(color.orange("Sorry! You lost. Try again !\n"));
                 start()
             }
-            else enterAletter();
+            
         }
         if (WordApp.complete === true) {
 
@@ -62,10 +62,7 @@ function enterAletter() {
             console.log(color.green("\nTry next word\n"));
             nextWord();
 
-
-
-
-        }
+        }else enterAletter();
 
     })
 
