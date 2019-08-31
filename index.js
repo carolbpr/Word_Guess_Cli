@@ -15,7 +15,7 @@ function start() {
     inquirer.prompt([{
         type: "confirm",
         name: "starting",
-        message: "STATES OF AMERICA GUESS WORD\n Would you like to play?\n"
+        message: "STATES OF AMERICA GUESS WORD\n\n Would you like to play?\n"
     }]).then(response => {
         if (response.starting === true) {
             WordApp.underscoresFunction(wordselected);
@@ -32,12 +32,11 @@ function enterAletter() {
         name: "UserGuess",
         message: "Guess a letter\n",
     }]).then(response => {
-        console.log(alredyguessedletter);
+        //console.log(alredyguessedletter);
         if (alredyguessedletter.includes(response.UserGuess) && WordApp.complete === false) {
             console.log(color.bgRed("Choose another letter, you already guessed this\n"));
             console.log(WordApp.hiddenLetter.join(" "));
             console.log("\n");
-            enterAletter();
         }
         //else if ((keyCode < 65 || keyCode > 90) && complete === false) {
         //    console.log("Please choose just letters");
